@@ -20,9 +20,9 @@
 }
 
 .container{
-    padding-right: 1rem;
-    padding-left: 1rem;
     max-width: 1024px;
+    padding-right: 1rem;
+    padding-left: 1rem;    
     margin: auto;
 }
 
@@ -51,7 +51,7 @@
 }
 
 .link:hover{
-    color: #087ea4;
+    color: #149eca;
 }
 
 .flexbox{
@@ -72,5 +72,23 @@
 }
 
 .hero{
+    background-color: #2b303b;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.g-layout{
+    display: grid;    
+}
+
+.g-layout--1-1{
+    grid-template-columns: 1fr;    
+}
+
+@media (min-width: 768px){
+    .g-layout--1-1{
+        grid-template-columns: 1fr 1fr;       
+    }
 }
