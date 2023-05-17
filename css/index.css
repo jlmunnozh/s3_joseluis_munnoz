@@ -37,16 +37,16 @@
 }
 
 .img--hero{
-    width: 226px;
-    height: 226px;
+    width: 220px;
+    height: 220px;
     border-radius: 0 0 50% 50%; 
     box-shadow: -0.25rem -0.25rem 1rem 0.25rem #149eca, 0.25rem 5px 1rem 0.25rem rgb(0, 213, 83, 0.8);    
 }
 
 @media (min-width: 768px){
     .img--hero{
-        width: 280px;
-        height: 280px;
+        width: 260px;
+        height: 260px;
     }
 }
 
