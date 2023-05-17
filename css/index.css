@@ -27,13 +27,27 @@
 }
 
 .img{    
-    object-fit: cover;
+    display: block;
 }
 
 .img--logo{
     width: 48px;
     height: 48px;
     border-radius: 50%;
+}
+
+.img--hero{
+    width: 256px;
+    height: 256px;
+    border-radius: 50%;
+    box-shadow: -0.25rem -0.25rem 1rem 0.25rem #149eca, 0.25rem 5px 1rem 0.25rem rgb(0, 213, 83, 0.8);
+}
+
+@media (min-witdh: 768px){
+    .img--hero{
+        width: 350px;
+        height: 350px;
+    }
 }
 
 .list{
@@ -54,15 +68,6 @@
     color: #149eca;
 }
 
-.flexbox{
-    display: flex;
-}
-
-.flexbox--header{
-    align-items: center;
-    justify-content: space-between;
-}
-
 .hero{
     min-height: 100vh;
     display: flex;
@@ -77,6 +82,7 @@
 .card__body{
     display: flex;
     flex-direction: column;
+    align-items: start;
     gap: 0.5rem;
 }
 
@@ -91,7 +97,6 @@
 
 .card__text{
     margin: 0;
-
 }
 
 .icon{
@@ -110,12 +115,48 @@
     display: flex;
 }
 
+.button{
+    display: flex;
+    padding: 0.5em 2em;
+    border: none;
+    border-radius: 1rem;
+    background-color: #149eca;    
+    color: white;
+    font-family: monospace;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    transition: box-shadown 0.25s, filter 0.25s;
+}
+
+.button::hove{
+    box-shadow:
+        0 0 0.125rem 0.0625rem #149eca,
+        0 0 025rem 0.125rem #149eca;
+    filter: brightness(1.125);
+}
+
+.flexbox{
+    display: flex;
+}
+
+.flexbox--header{
+    align-items: center;
+    justify-content: space-between;
+}
+
 .g-layout{
     display: grid;    
 }
 
 .g-layout--1-1{
     grid-template-columns: 1fr;    
+}
+
+.g-layout--center{
+    align-items: center;
+    justify-items: center;
 }
 
 @media (min-width: 768px){
@@ -130,6 +171,14 @@
 
 .gap-1xs{
     gap: 1rem;
+}
+
+.gap-sm{
+    gap: 1.5rem;
+}
+
+.gap-md{
+    gap: 2rem;
 }
 
 .color-primary{
