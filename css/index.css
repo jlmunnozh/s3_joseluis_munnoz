@@ -37,16 +37,16 @@
 }
 
 .img--hero{
-    width: 256px;
-    height: 256px;
-    border-radius: 50%;
-    box-shadow: -0.25rem -0.25rem 1rem 0.25rem #149eca, 0.25rem 5px 1rem 0.25rem rgb(0, 213, 83, 0.8);
+    width: 226px;
+    height: 226px;
+    border-radius: 0 0 50% 50%; 
+    box-shadow: -0.25rem -0.25rem 1rem 0.25rem #149eca, 0.25rem 5px 1rem 0.25rem rgb(0, 213, 83, 0.8);    
 }
 
-@media (min-witdh: 768px){
+@media (min-width: 768px){
     .img--hero{
-        width: 350px;
-        height: 350px;
+        width: 280px;
+        height: 280px;
     }
 }
 
@@ -70,6 +70,9 @@
 
 .hero{
     min-height: 100vh;
+    background-image: linear-gradient(#00000080, #00000080), url('https://i.postimg.cc/ht09wTWh/fondo-matrix-01.webp');
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -83,7 +86,7 @@
     display: flex;
     flex-direction: column;
     align-items: start;
-    gap: 0.5rem;
+    gap: 0.75rem;
 }
 
 .card__title{
@@ -97,6 +100,12 @@
 
 .card__text{
     margin: 0;
+}
+
+@media (min-width: 768px){
+    .card__body{
+        gap: 1rem;
+    }
 }
 
 .icon{
@@ -115,6 +124,12 @@
     display: flex;
 }
 
+@media (min-width: 768px){
+    .icon{
+        font-size: 1.5rem;
+    }
+}
+
 .button{
     display: flex;
     padding: 0.5em 2em;
@@ -127,7 +142,7 @@
     font-weight: 700;
     text-decoration: none;
     cursor: pointer;
-    transition: box-shadown 0.25s, filter 0.25s;
+    transition: box-shadown 0.25s, filter 0.25s;    
 }
 
 .button::hove{
@@ -135,6 +150,12 @@
         0 0 0.125rem 0.0625rem #149eca,
         0 0 025rem 0.125rem #149eca;
     filter: brightness(1.125);
+}
+
+@media (min-width: 768px){
+    .button{
+        font-size: 1rem;
+    }
 }
 
 .flexbox{
