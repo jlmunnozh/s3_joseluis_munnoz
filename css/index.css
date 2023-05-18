@@ -41,7 +41,7 @@
     height: 220px;
     border-radius: 0 0 50% 50%; 
     box-shadow: -0.25rem -0.25rem 1rem 0.25rem #149eca, 0.25rem 5px 1rem 0.25rem rgb(0, 213, 83, 0.8);    
-    transform: rotateY(180deg);
+    /* transform: rotateY(180deg); */
 }
 
 @media (min-width: 768px){
@@ -74,6 +74,15 @@
     pointer-events: initial;
 }
 
+@media (min-width: 768px){
+    .list--menu{
+        opacity: 1;
+        pointer-events: initial;
+        position: initial;
+        background-color: initial;
+    }
+}
+
 .link{
     color: white;
     text-decoration: none;
@@ -88,12 +97,17 @@
 
 .hero{
     min-height: 100vh;
-    background-image: linear-gradient(#00000080, #00000080), url('https://i.postimg.cc/ht09wTWh/fondo-matrix-01.webp');
+    /* background-image: linear-gradient(#00000080, #00000080), url('https://i.postimg.cc/ht09wTWh/fondo-matrix-01.webp'); */
+    background-image: linear-gradient(#00000080, #00000080), url('../img/fondo_matrix_01.webp');
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.hero::before{
+    content: '';
 }
 
 .card{
@@ -190,6 +204,21 @@
     justify-content: space-between;
 }
 
+.flexbox--responsive{
+    flex-direction: column;
+}
+
+.flexbox--center{
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 768px){
+    .flexbox--responsive{
+        flex-direction: row;
+    }
+}
+
 .g-layout{
     display: grid;    
 }
@@ -237,6 +266,10 @@
 @media (min-width: 768px){
     .md\:d-block{
         display: block;
+    }
+
+    .md\:d-none{
+        display: none;
     }
 }
 
