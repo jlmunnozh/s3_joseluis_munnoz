@@ -17,6 +17,18 @@
 .nav{
     padding-top: 1rem;
     padding-bottom: 1rem;
+    --i-menu: 1;
+    --i-close: 1;
+}
+
+#menu:target{
+    --i-menu: 0;
+    --i-close: 1;
+}
+
+#menu:target .list--menu{
+    opacity: 1;
+    pointer-events: initial;
 }
 
 .container{
@@ -69,10 +81,10 @@
     transition: opacity 0.25s;
 }
 
-.list--menu:target{
+/* .list--menu:target{
     opacity: 1;
     pointer-events: initial;
-}
+} */
 
 @media (min-width: 768px){
     .list--menu{
@@ -138,6 +150,18 @@
     .card__body{
         gap: 1rem;
     }
+
+    .card__title{
+        font-size: 1.5rem;
+    }
+
+    .card__title--lg{
+        font-size: 1.75rem;
+    }
+
+    .card__text{
+        font-size: 1rem;
+    }
 }
 
 .icon{
@@ -151,6 +175,19 @@
     padding: 0.5rem;
     text-shadow: 0 0 0.25rem;
 }
+.icon--menu{
+    transform: scale(var(--i-menu));
+    position: absolute;
+    right: 1rem;
+    transition: transform 0.25s;
+}
+
+.icon--close{
+    transform: scale(var(--i-close));
+    position: absolute;
+    right: 1rem;
+    transition: transform 0.25s;
+}
 
 .icon--lg{
     font-size: 1.5rem;
@@ -160,11 +197,11 @@
     display: flex;
 }
 
-@media (min-width: 768px){
+/* @media (min-width: 768px){
     .icon{
         font-size: 1.5rem;
     }
-}
+} */
 
 .button{
     display: flex;

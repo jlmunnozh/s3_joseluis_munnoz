@@ -15,18 +15,18 @@
 </head>
 <body class="body">
     <header class="header">
-        <nav class="nav">
+        <nav class="nav" id="menu">
             <div class="container flexbox flexbox--header">
                 <a href="#">
                     <!-- BEM -->
                     <!-- BLOCK -->
                     <!-- BLOCK__ELEMENT -->
                     <!-- BLOCK--MODIFIER -->
-                    <img src="./img/foto_jmh.webp" alt="Logo Joseluis Muñoz" width="96" height="96" class="img img--logo" />
+                    <img src="./img/foto_jmh.webp" alt="Logo Joseluis Muñoz" width="48" height="48" class="img img--logo" />
                 </a>
-                <a href="#menu" class="icon icon--lg" aria-label="menu"><i class="bi bi-list"></i>
-                </a>
-                <ul class="list list--menu flexbox flexbox--center flexbox--responsive gap-1xs" id="menu">
+                <a href="#menu" class="icon icon--lg icon--menu md:d-none" aria-label="menu-list"><i class="bi bi-list"></i></a>
+                <a href="#" class="icon icon--lg icon--close md:d-none" aria-label="menu-close"><i class="bi bi-x-circle"></i></a>
+                <ul class="list list--menu flexbox flexbox--center flexbox--responsive gap-1xs">
                     <li>
                         <a class="link" href="#">Servicios</a>
                     </li>
