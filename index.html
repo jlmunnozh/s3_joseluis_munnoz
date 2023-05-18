@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
     <title>Joseluis Muñoz</title>
+    <!-- <style>
+        .list:target{
+            background-color: red;
+        } -->
+    </style>
 </head>
 <body class="body">
     <header class="header">
@@ -19,7 +24,9 @@
                     <!-- BLOCK--MODIFIER -->
                     <img src="./img/foto_jmh.webp" alt="Logo Joseluis Muñoz" width="96" height="96" class="img img--logo" />
                 </a>
-                <ul class="list d-flex gap-1xs">
+                <a href="#menu" class="icon icon--lg" aria-label="menu"><i class="bi bi-list"></i>
+                </a>
+                <ul class="list list--menu d-flex gap-1xs" id="menu">
                     <li>
                         <a class="link" href="#">Servicios</a>
                     </li>
